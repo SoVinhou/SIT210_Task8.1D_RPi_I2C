@@ -1,12 +1,11 @@
 import time
 from time import sleep
 import RPi.GPIO as GPIO
-from signal import signal, SIGTERM, SIGHUP, pause
 GPIO.setmode(GPIO.BCM)
 
 ##DECLARATION
 TRIG = 3
-ECHO = 24
+ECHO = 2
 
 GPIO.setup(TRIG,GPIO.OUT)
 GPIO.output(TRIG,0)
